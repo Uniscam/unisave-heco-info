@@ -1,4 +1,4 @@
-export const FACTORY_ADDRESS = '0x32CE36F6eA8d97f9fC19Aab83b9c6D2F52D74470'
+export const FACTORY_ADDRESS = '0x32ce36f6ea8d97f9fc19aab83b9c6d2f52d74470'
 export const BUNDLE_ID = '1'
 
 export const timeframeOptions = {
@@ -11,7 +11,8 @@ export const timeframeOptions = {
 
 // token list urls to fetch tokens from - use for warnings on tokens and pairs
 export const SUPPORTED_LIST_URLS__NO_ENS = [
-  'https://raw.githubusercontent.com/pancakeswap/pancake-swap-interface/master/src/constants/token/pancakeswap.json'
+  'https://gateway.ipfs.io/ipns/tokens.uniswap.org',
+  'https://www.coingecko.com/tokens_list/uniswap/defi_100/v_0_0_0.json',
 ]
 
 // hide from overview list
@@ -20,10 +21,6 @@ export const OVERVIEW_TOKEN_BLACKLIST = [
   '0xc3761eb917cd790b30dad99f6cc5b4ff93c4f9ea',
   '0xe31debd7abff90b06bca21010dd860d8701fd901',
   '0xfc989fbb6b3024de5ca0144dc23c18a063942ac1',
-  '0xe40fc6ff5f2895b44268fd2e1a421e07f567e007',
-  '0xfd158609228b43aa380140b46fff3cdf9ad315de',
-  '0xc00af6212fcf0e6fd3143e692ccd4191dc308bea',
-  '0x205969b3ad459F7eBA0DEe07231A6357183D3fb6'
 ]
 
 // pair blacklist
