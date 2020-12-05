@@ -3,6 +3,8 @@ import styled from 'styled-components'
 import { isAddress } from '../../utils/index.js'
 import PlaceHolder from '../../assets/placeholder.png'
 import EthereumLogo from '../../assets/eth.png'
+import DegoLogo from '../../assets/dego.png'
+import ForceProtocol from '../../assets/forceprotocol.webp'
 
 const BAD_IMAGES = {}
 
@@ -71,8 +73,12 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
     address
   )}/logo.png`
 
-  if (address?.toLowerCase() === '0x12e2fcfa079fc23ae82ab82707b402410321103f')
+  if (address?.toLowerCase() === '0xc7fD9aE2cf8542D71186877e21107E1F3A0b55ef')
     path = 'https://ssimg.frontenduse.top/article/2020/10/22/2be5eb8b1704d4c663d1b68509a8a353.png'
+  else if (address?.toLowerCase() === '0x1fcdce58959f536621d76f5b7ffb955baa5a672f')
+    path = ForceProtocol
+  else if (address?.toLowerCase() === '0x88ef27e69108b2633f8e1c184cc37940a075cc02')
+    path = DegoLogo
 
   return (
     <Inline>

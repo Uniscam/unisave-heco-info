@@ -163,8 +163,8 @@ function SideNav({ history }) {
           </AutoColumn>
           <AutoColumn gap="0.5rem" style={{ marginLeft: '.75rem', marginBottom: '4rem' }}>
             <HeaderText>
-              <Link href="https://swap.y3d.finance/#/swap" target="_blank">
-                Uniscam
+              <Link href="https://app.unisave.exchange/#/swap" target="_blank">
+                Unisave
               </Link>
             </HeaderText>
             {/* <HeaderText>
@@ -173,7 +173,7 @@ function SideNav({ history }) {
               </Link>
             </HeaderText> */}
             <HeaderText>
-              <Link href="https://twitter.com/y3dscam" target="_blank">
+              <Link href="https://twitter.com/UnisaveProtocol" target="_blank">
                 Twitter
               </Link>
             </HeaderText>
