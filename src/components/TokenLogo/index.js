@@ -73,7 +73,7 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
     address
   )}/logo.png`
 
-  if (address?.toLowerCase() === '0xc7fD9aE2cf8542D71186877e21107E1F3A0b55ef')
+  if (address?.toLowerCase() === '0xc7fd9ae2cf8542d71186877e21107e1f3a0b55ef')
     path = 'https://ssimg.frontenduse.top/article/2020/10/22/2be5eb8b1704d4c663d1b68509a8a353.png'
   else if (address?.toLowerCase() === '0x1fcdce58959f536621d76f5b7ffb955baa5a672f')
     path = ForceProtocol
