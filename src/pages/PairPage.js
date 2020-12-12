@@ -126,8 +126,6 @@ function PairPage({ pairAddress, history }) {
     dummy1,
     deposit0,
     deposit1,
-    redepositRatio0,
-    redepositRatio1,
     yToken0,
     yToken1,
   } = usePairData(pairAddress)
@@ -531,8 +529,10 @@ function PairPage({ pairAddress, history }) {
                       <CopyHelper toCopy={yToken1?.id} />
                     </AutoRow>
                   </Column>
-                  <Column></Column>
-                  <Column></Column>
+                  <Column>
+                    <TYPE.main>Strategy</TYPE.main>
+                    <TYPE.main style={{ marginTop: '.5rem' }}>YFII</TYPE.main>
+                  </Column>
                 </TokenDetailsLayout>
                 <TokenDetailsLayout style={{ marginTop: '1rem' }}>
                   <Column>
