@@ -500,7 +500,7 @@ function PairPage({ pairAddress, history }) {
                 }}
                 p={20}
               >
-                <TokenDetailsLayout>
+                {yToken0 && yToken1 && (<TokenDetailsLayout style={{ marginBottom: '1rem' }}>
                   <Column>
                     <TYPE.main>
                       <RowFixed>
@@ -533,8 +533,8 @@ function PairPage({ pairAddress, history }) {
                     <TYPE.main>Strategy</TYPE.main>
                     <TYPE.main style={{ marginTop: '.5rem' }}>YFII</TYPE.main>
                   </Column>
-                </TokenDetailsLayout>
-                <TokenDetailsLayout style={{ marginTop: '1rem' }}>
+                </TokenDetailsLayout>)}
+                <TokenDetailsLayout>
                   <Column>
                     <TYPE.main>{token0?.symbol ?? ''} Mining Rate</TYPE.main>
                     <TYPE.main style={{ marginTop: '.5rem' }}>
