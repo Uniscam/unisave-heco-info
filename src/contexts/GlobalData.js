@@ -271,17 +271,25 @@ async function getGlobalData(ethPrice, oldEthPrice) {
         twoDayData.totalVolumeUSD ? twoDayData.totalVolumeUSD : 0
       )
 
-      const [oneWeekVolume, weeklyVolumeChange] = get2DayPercentChange(
-        data.totalVolumeUSD,
-        oneWeekData.totalVolumeUSD,
-        twoWeekData.totalVolumeUSD
-      )
+      let oneWeekVolume, weeklyVolumeChange
 
-      const [oneDayTxns, txnChange] = get2DayPercentChange(
-        data.txCount,
-        oneDayData.txCount ? oneDayData.txCount : 0,
-        twoDayData.txCount ? twoDayData.txCount : 0
-      )
+      try {
+        [oneWeekVolume, weeklyVolumeChange] = get2DayPercentChange(
+          data.totalVolumeUSD,
+          oneWeekData.totalVolumeUSD,
+          twoWeekData.totalVolumeUSD
+        )
+      } catch { }
+
+      let oneDayTxns, txnChange
+
+      try {
+        [oneDayTxns, txnChange] = get2DayPercentChange(
+          data.txCount,
+          oneDayData.txCount ? oneDayData.txCount : 0,
+          twoDayData.txCount ? twoDayData.txCount : 0
+        )
+      } catch { }
 
       // format the total liquidity in USD
       data.totalLiquidityUSD = data.totalLiquidityETH * ethPrice
